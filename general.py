@@ -68,7 +68,7 @@ for webchat in webchats:
             time.sleep(10)
 
         #! Getting Public ip_addr:
-        # * Local -> home_ip = get('https://api.ipify.org').content.decode('utf8')
+        # * Local -> home_ip = get('https://api.ipif    y.org').content.decode('utf8')
         # * Webserver -> from='{socket.gethostbyname(urlparse(webchats[webchat]).hostname)}'
 
         webchat_ip = socket.gethostbyname(urlparse(webchats[webchat]).hostname)
